@@ -1,0 +1,11 @@
+{
+    "TouchButtonEvent.Click|block": "Klick",
+    "TouchButtonEvent.LongClick|block": "Klick lang",
+    "TouchButtonEvent.Up|block": "losgelassen",
+    "TouchButtonEvent.Down|block": "berührt",
+    "TouchButtonEvent.Hold|block": "halten",
+    "input.touchvalue|block": "%button Wert",
+    "input.touchcalibrate|block": "%button kalibrieren",
+    "input.touchistouched|block": "%button berührt",
+    "input.touchonevent|block": "wenn %button $event"
+} 

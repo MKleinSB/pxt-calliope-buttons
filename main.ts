@@ -205,8 +205,8 @@ namespace input {
 
     const P1: PwmPin = new MicrobitPin(DigitalPin.P1);
     const P2: PwmPin = new MicrobitPin(DigitalPin.P2);
-    const C16: PwmPin = new MicrobitPin(DigitalPin.C16);
-    const C17: PwmPin = new MicrobitPin(DigitalPin.C17);
+    const C16: PwmPin = new MicrobitPin(9);  //C16
+    const C17: PwmPin = new MicrobitPin(15); //C17
 
     //% fixedInstance block="P1"
     //% group="Touch"
