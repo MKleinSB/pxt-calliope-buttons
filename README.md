@@ -4,7 +4,7 @@ This is a fork of
 
 # Micro:bit buttons
 
-with changes to work with Calliope Mini and it´s pins P1,P2 (Edge Connectors) and C16,C17 (right Grove port)
+with changes to work with Calliope Mini and its pins P1,P2 (Edge Connectors) and C16,C17 (right Grove port)
 
 ## Using this extension
 
@@ -20,7 +20,7 @@ The button emits ``down``, ``up``, ``click``, ``long lick``
 and ``hold`` events.
 
 ```blocks
-input.touchP0.onEvent(TouchButtonEvent.Click, function () {
+input.touchP1.onEvent(TouchButtonEvent.Click, function () {
     led.plot(2, 1)
 })
 ```
@@ -31,7 +31,7 @@ Use ``isTouched`` or ``value`` to query the state of the sensor.
 
 ```blocks
 basic.forever(function () {
-    if (input.touchP0.isTouched()) {
+    if (input.touchP1.isTouched()) {
         led.plot(0, 0)
     } else {
         led.unplot(0, 0)
