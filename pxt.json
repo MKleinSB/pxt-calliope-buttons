@@ -12,5 +12,8 @@
         "_locales/de/pxt-calliope-buttons-strings.json"
     ],
     "public": false,
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }
