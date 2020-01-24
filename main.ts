@@ -17,7 +17,7 @@ const enum TouchButtonEvent {
 /**
  * Capacitive button support in micro:bit
  */
-namespace input {
+namespace Touch {
     const CAPACITIVE_TOUCH_ID = 6543;
     const CALIBRATION_SAMPLES = 8;
     const CAP_SAMPLES = 4;
