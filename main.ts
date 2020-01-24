@@ -17,7 +17,7 @@ const enum TouchButtonEvent {
 /**
  * Capacitive button support in micro:bit
  */
-namespace input {
+namespace Touch {
     const CAPACITIVE_TOUCH_ID = 6543;
     const CALIBRATION_SAMPLES = 8;
     const CAP_SAMPLES = 4;
@@ -159,7 +159,6 @@ namespace input {
          * Gets the value of the capacitive pin
          */
         //% blockId=touchvalue block="%button value"
-        //% subcategory="Touch"
         value() {
             this.init();
             return this.lastReading | 0;
@@ -169,7 +168,6 @@ namespace input {
          * Calibrate
          */
         //% blockId=touchcalibrate block="%button calibrate"
-        //% subcategory="Touch"
         calibrate() {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
@@ -179,7 +177,6 @@ namespace input {
          * Determines if the button is being pressed
          */
         //% blockId=touchistouched block="is %button touched"
-        //% subcategory="Touch"
         isTouched(): boolean {
             this.init();
             return this.isActive();
@@ -193,7 +190,6 @@ namespace input {
          * Registers an button event
          */
         //% blockId=touchonevent block="on %button $event"
-        //% subcategory="Touch"
         onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
             control.onEvent(this.id, event, handler);
