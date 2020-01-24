@@ -159,6 +159,7 @@ namespace input {
          * Gets the value of the capacitive pin
          */
         //% blockId=touchvalue block="%button value"
+        //% subcategory="Touch"
         value() {
             this.init();
             return this.lastReading | 0;
@@ -168,6 +169,7 @@ namespace input {
          * Calibrate
          */
         //% blockId=touchcalibrate block="%button calibrate"
+        //% subcategory="Touch"
         calibrate() {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
@@ -177,7 +179,7 @@ namespace input {
          * Determines if the button is being pressed
          */
         //% blockId=touchistouched block="is %button touched"
-        //% group="Touch"
+        //% subcategory="Touch"
         isTouched(): boolean {
             this.init();
             return this.isActive();
@@ -191,20 +193,20 @@ namespace input {
          * Registers an button event
          */
         //% blockId=touchonevent block="on %button $event"
-        //% group="Touch"
+        //% subcategory="Touch"
         onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
             control.onEvent(this.id, event, handler);
         }
     }
 
-    // irgendwie sind die Deklarationen in pinskombats.ts nicht optimal, deswegen werden sie hier
+    // irgendwie sind die Deklarationen in pinskomats.ts nicht optimal, deswegen werden sie hier
     // von mir einfach umdeklariert
 
     const P1: PwmPin = new MicrobitPin(DigitalPin.P1);
     const P2: PwmPin = new MicrobitPin(DigitalPin.P2);
-    const C16: PwmPin = new MicrobitPin(9);  //C16
-    const C17: PwmPin = new MicrobitPin(15); //C17
+    const C16: PwmPin = new MicrobitPin(DigitalPin.C16);
+    const C17: PwmPin = new MicrobitPin(DigitalPin.C17);
 
     //% fixedInstance block="P1"
     //% group="Touch"
