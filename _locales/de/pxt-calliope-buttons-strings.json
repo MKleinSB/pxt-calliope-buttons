@@ -4,7 +4,7 @@
     "TouchButtonEvent.Up|block": "losgelassen",
     "TouchButtonEvent.Down|block": "berührt",
     "TouchButtonEvent.Hold|block": "halten",
-    "Touch.value|block": "%button Wert",
+    "Touch.touchvalue|block": "%button Wert",
     "Touch.calibrate|block": "%button kalibrieren",
     "Touch.isTouched|block": "%button berührt",
     "Touch.onEvent|block": "wenn %button $event"
