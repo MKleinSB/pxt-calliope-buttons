@@ -17,6 +17,9 @@ const enum TouchButtonEvent {
 /**
  * Capacitive button support in micro:bit
  */
+
+//% weight=5 color=#0fbc11 icon="\uf0a6" block="Touch"
+
 namespace Touch {
     const CAPACITIVE_TOUCH_ID = 6543;
     const CALIBRATION_SAMPLES = 8;
@@ -158,7 +161,7 @@ namespace Touch {
         /**
          * Gets the value of the capacitive pin
          */
-        //% blockId=touchvalue block="%button value"
+        //% blockId=touchvalue block="%button Wert"
         value() {
             this.init();
             return this.lastReading | 0;
@@ -167,7 +170,7 @@ namespace Touch {
         /**
          * Calibrate
          */
-        //% blockId=touchcalibrate block="%button calibrate"
+        //% blockId=touchcalibrate block="Touchpin %button kalibrieren"
         calibrate() {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
@@ -176,7 +179,7 @@ namespace Touch {
         /**
          * Determines if the button is being pressed
          */
-        //% blockId=touchistouched block="is %button touched"
+        //% blockId=touchistouched block="%button berührt"
         isTouched(): boolean {
             this.init();
             return this.isActive();
@@ -189,14 +192,14 @@ namespace Touch {
         /**
          * Registers an button event
          */
-        //% blockId=touchonevent block="on %button $event"
+        //% blockId=touchonevent block="wenn %button $event"
         onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
             control.onEvent(this.id, event, handler);
         }
     }
 
-    // irgendwie sind die Deklarationen in pinskomats.ts nicht optimal, deswegen werden sie hier
+    // irgendwie sind die Deklarationen in core/pinscompat.ts nicht optimal, deswegen werden sie hier
     // von mir einfach umdeklariert
 
     const P1: PwmPin = new MicrobitPin(DigitalPin.P1);
