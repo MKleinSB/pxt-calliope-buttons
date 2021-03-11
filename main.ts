@@ -142,7 +142,7 @@ namespace Touch {
 
                 //determine if this is a long click or a normal click and send event
                 const elapsed = input.runningTime() - this.downStartTime;
-                if (elapsed >= DAL.MICROBIT_BUTTON_LONG_CLICK_TIME)
+                if (elapsed >= DAL.MICROBIT_BUTTON_EVT_LONG_CLICK)
                     control.raiseEvent(this.id, TouchButtonEvent.LongClick);
                 else
                     control.raiseEvent(this.id, TouchButtonEvent.Click);
