@@ -1,9 +1,9 @@
 {
-    "TouchButtonEvent.Click|block": "Klick",
-    "TouchButtonEvent.LongClick|block": "Klick lang",
+    "TouchButtonEvent.Click|block": "geklickt",
+    "TouchButtonEvent.LongClick|block": "lange geklickt",
     "TouchButtonEvent.Up|block": "losgelassen",
     "TouchButtonEvent.Down|block": "berührt",
-    "TouchButtonEvent.Hold|block": "halten",
+    "TouchButtonEvent.Hold|block": "gehalten",
     "Touch.touchvalue|block": "%button Wert",
     "Touch.calibrate|block": "%button kalibrieren",
     "Touch.isTouched|block": "%button berührt",
