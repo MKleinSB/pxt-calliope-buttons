@@ -15,7 +15,7 @@ const enum TouchButtonEvent {
 };
 
 /**
- * Capacitive button support in Calliope mini
+ * Capacitive button support for Calliope mini
  */
 
 //% weight=5 color=#0fbc11 icon="\uf0a6" block="Touch"
