@@ -7,7 +7,7 @@
     "Touch.CapacitiveButton.value|block": "%button Wert",
     "Touch.CapacitiveButton.calibrate|block": "kalibriere %button",
     "Touch.CapacitiveButton.isTouched|block": "%button berührt",
-    "Touch.CapacitiveButton.onevent|block": "wenn %button $event",
+    "Touch.CapacitiveButton.onEvent|block": "wenn %button $event",
     "{id:group}On Start": "Beim Start",
     "{id:group}Buttons": "Touchbuttons"
 }

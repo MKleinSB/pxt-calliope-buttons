@@ -168,38 +168,43 @@ namespace Touch {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
         }
-
+ 
         /**
-        * Gets the value of the capacitive pin
-        */
-        //% blockId=touchvalue block="%button value"
+         * Registers an button event
+         */
+        //% blockId=touchonevent block="on %button $event"
         //% group="Buttons"
-        value() {
+        onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
-            return this.lastReading | 0;
+            control.onEvent(this.id, event, handler);
         }
 
         /**
-         * Determines if the button is being pressed
-         */
+          * Determines if the button is being pressed
+          */
         //% blockId=touchistouched block="%button berührt"
         isTouched(): boolean {
             this.init();
             return this.isActive();
         }
 
+        /**
+        * Gets the value of the capacitive pin
+        */
+        //% blockId=touchvalue block="%button value"
+
+        value() {
+            this.init();
+            return this.lastReading | 0;
+        }
+
+
         private isActive(): boolean {
             return this.threshold <= this.lastReading;
         }
 
-        /**
-         * Registers an button event
-         */
-        //% blockId=touchonevent block="on %button $event"
-        onEvent(event: TouchButtonEvent, handler: () => void) {
-            this.init();
-            control.onEvent(this.id, event, handler);
-        }
+
+
     }
 
     // irgendwie sind die Deklarationen in core/pinscompat.ts nicht optimal, deswegen werden sie hier
