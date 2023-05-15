@@ -4,8 +4,8 @@
     "TouchButtonEvent.Up|block": "losgelassen",
     "TouchButtonEvent.Down|block": "berührt",
     "TouchButtonEvent.Hold|block": "gehalten",
-    "Touch.CapacitiveButton.touchvalue|block": "%button Wert",
-    "Touch.CapacitiveButton.touchcalibrate|block": "%button kalibrieren",
-    "Touch.CapacitiveButton.touchisTouched|block": "%button berührt",
-    "Touch.CapacitiveButton.touchonevent|block": "wenn %button $event"
+    "Touch.CapacitiveButton.value|block": "%button Wert",
+    "Touch.CapacitiveButton.calibrate|block": "%button kalibrieren",
+    "Touch.CapacitiveButton.isTouched|block": "%button berührt",
+    "Touch.CapacitiveButton.onevent|block": "wenn %button $event"
 }
