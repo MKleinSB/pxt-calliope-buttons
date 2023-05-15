@@ -3,15 +3,19 @@
     "version": "0.0.10",
     "description": "Echte Touch Buttons am Calliope Mini",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
         "main.ts",
-        "_locales/de/pxt-calliope-buttons-strings.json"
+        "_locales/de/pxt-calliope-buttons-strings.json",
+        "touch.ts"
     ],
     "public": false,
+    "targetVersions": {
+        "target": "4.0.29",
+        "targetId": "calliopemini"
+    },
     "supportedTargets": [
         "calliopemini",
         "microbit"
