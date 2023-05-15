@@ -161,7 +161,7 @@ namespace Touch {
         /**
          * Gets the value of the capacitive pin
          */
-        //% blockId=touchvalue block="%button Wert"
+        //% blockId=touchvalue block="%button value"
         value() {
             this.init();
             return this.lastReading | 0;
@@ -170,7 +170,7 @@ namespace Touch {
         /**
          * Calibrate
          */
-        //% blockId=touchcalibrate block="Touchpin %button kalibrieren"
+        //% blockId=touchcalibrate block="calibrate touchpin %button"
         calibrate() {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
@@ -192,7 +192,7 @@ namespace Touch {
         /**
          * Registers an button event
          */
-        //% blockId=touchonevent block="wenn %button $event"
+        //% blockId=touchonevent block="on %button $event"
         onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
             control.onEvent(this.id, event, handler);
