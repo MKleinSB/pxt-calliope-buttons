@@ -19,6 +19,7 @@ const enum TouchButtonEvent {
  */
 
 //% weight=5 color=#0fbc11 icon="\uf0a6" block="Touch"
+//% groups='["On Start","Buttons"]'
 
 namespace Touch {
     const CAPACITIVE_TOUCH_ID = 6543;
@@ -159,21 +160,23 @@ namespace Touch {
         }
 
         /**
-         * Gets the value of the capacitive pin
-         */
-        //% blockId=touchvalue block="%button value"
-        value() {
-            this.init();
-            return this.lastReading | 0;
-        }
-
-        /**
          * Calibrate
          */
         //% blockId=touchcalibrate block="calibrate touchpin %button"
+        //% group="On Start"
         calibrate() {
             this.status |= STATE_CALIBRATION_REQUIRED;
             this.init();
+        }
+
+        /**
+        * Gets the value of the capacitive pin
+        */
+        //% blockId=touchvalue block="%button value"
+        //% group="Buttons"
+        value() {
+            this.init();
+            return this.lastReading | 0;
         }
 
         /**
