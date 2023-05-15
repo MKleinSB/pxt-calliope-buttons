@@ -1,6 +1,6 @@
 {
     "name": "pxt-calliope-buttons",
-    "version": "0.0.17",
+    "version": "0.1.0",
     "description": "Echte Touch Buttons am Calliope Mini",
     "dependencies": {
         "core": "*"
