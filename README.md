@@ -2,15 +2,15 @@
 
 This is a fork of
 
-# Micro:bit buttons
+Micro:bit buttons
 
 with changes to work with Calliope Mini and its pins P1,P2 (Edge Connectors) and C16,C17 (right Grove port)
 
 ## Using this extension
 
-* go to https://makecode.microbit.org 
+* go to https://makecode.calliope.cc
 * create a new program or open existing
-* go to **Advanced**, **Extensions** and search for https://github.com/microsoft/pxt-microbit-buttons
+* go to **Advanced**, **Extensions** and search for [https://github.com/MKleinSB/pxt-calliope-buttons]
 
 ## Capacitive buttons (touch)
 
