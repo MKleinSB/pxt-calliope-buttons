@@ -173,7 +173,7 @@ namespace Touch {
          * Registers an button event
          */
         //% blockId=touchonevent block="on %button $event"
-        //% group="Buttons"
+        //% group="Buttons" weight=80
         onEvent(event: TouchButtonEvent, handler: () => void) {
             this.init();
             control.onEvent(this.id, event, handler);
@@ -182,7 +182,7 @@ namespace Touch {
         /**
           * Determines if the button is being pressed
           */
-        //% blockId=touchistouched block="%button berührt"
+        //% blockId=touchistouched block="%button berührt" weight=70
         isTouched(): boolean {
             this.init();
             return this.isActive();
@@ -191,7 +191,7 @@ namespace Touch {
         /**
         * Gets the value of the capacitive pin
         */
-        //% blockId=touchvalue block="%button value"
+        //% blockId=touchvalue block="%button value" weight=60
 
         value() {
             this.init();
